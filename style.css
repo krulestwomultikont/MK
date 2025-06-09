@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #e1e9ff; /* jasne tło */
+  color: #686868; /* ciemny brąz / złoty tekst */
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+header p {
+  color: #555;
+  font-style: italic;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background-color: #1d4c8a;
+  color: #c9c9c9;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #8ab5e5;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+/* Linki */
+a {
+  color: #0b73b8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #8c7843;
+  font-size: 0.9rem;
+}
+
+/* NAVIGATION MENU */
+
+.navbar {
+  background-color: #00449c;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #525252;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #585858;
+  min-width: 200px;
+  z-index: 1000;
+  list-style: none; /* USUWA KÓŁKA */
+  padding: 0;
+  margin: 0;
+}
+
+.submenu a {
+  color: #d3d3d3;
+}
+
+.submenu li a {
+  padding: 0.75rem 1rem;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: #002f5c;
+}
+
+.menu, .submenu {
+  list-style: none;
+}
+
+/* Nagłówek z herbem */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #021f9c;
+  padding-bottom: 1rem;
+  justify-content: center; /* DODAĆ TO */
+  text-align: center;       /* Wyrównanie tekstu w kolumnie tekstowej */
+}
+
+.header img.herb {
+  width: 80px;
+  height: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  color: #090083; /* ciemne złoto */
+}
+
+.header-text p {
+  color: #5f5f5f;
+  font-style: italic;
+}
