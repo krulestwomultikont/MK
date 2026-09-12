@@ -1,383 +1,78 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monitor Krulewski</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor Krulewski – Dziennik Urzędowy Korony Krulestwa Multikont</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <nav class="navbar">
+
+<!-- Rządowy pasek nawigacyjny -->
+<nav class="navbar">
   <ul class="menu">
     <li>
-	<a href="#">Publikatory</a>
-		<ul class="submenu">
-       	 	<li><a href="https://krulestwomultikont.github.io/KDU">Krulewski Dziennik Ustaw</a></li>
-       	 	<li><a href="https://krulestwomultikont.github.io/MK">Monitor Krulewski</a></li>
-			<li><a href="https://krulestwomultikont.github.io/BIOSP/KRA">Krajowy Rejestr Arystokracji</a></li>
-    	</ul>
-	</li>
+      <a href="#">Publikatory</a>
+      <ul class="submenu">
+        <li><a href="https://krulestwomultikont.github.io/KDU">Krulewski Dziennik Ustaw</a></li>
+        <li><a href="https://krulestwomultikont.github.io/MK">Monitor Krulewski</a></li>
+        <li><a href="https://krulestwomultikont.github.io/BIOSP/KRA">Krajowy Rejestr Arystokracji</a></li>
+      </ul>
+    </li>
     <li>
-    <a href="#">DWZZM</a>
-     	<ul class="submenu">
-        	<li><a href="https://krulestwomultikont.github.io/DUDWZZM">Dziennik Urzędowy DWZZM</a></li>
-      	</ul>
+      <a href="#">DWZZM</a>
+      <ul class="submenu">
+        <li><a href="https://krulestwomultikont.github.io/DUDWZZM">Dziennik Urzędowy DWZZM</a></li>
+      </ul>
     </li>
     <li><a href="https://krulestwomultikont.github.io/BIOSP">BIOSP</a></li>
   </ul>
 </nav>
 
-  <header class="header">
-  <img src="herb.png" alt="Herb Królestwa" class="herb" />
-  <div class="header-text">
-    <h1>Monitor Krulewski</h1>
-    
+<!-- Główny kontener portalu -->
+<main class="main-wrapper">
+  
+  <!-- Oficjalny nagłówek urzędowy -->
+  <header class="registry-header">
+    <div class="header-emblem-box">
+      <img src="herb.png" alt="Godło Korony" class="header-emblem">
+    </div>
+    <div class="header-text-box">
+      <h1>Monitor Krulewski</h1>
+      <div class="subtitle">Urzędowy publikator aktów organów centralnych Korony Krulestwa Multikont</div>
+      <div class="legal-basis">
+        Elektroniczny rejestr publikacyjny uchwał, postanowień, zarządzeń Krula i ministrów koronnych.
+      </div>
+      <div class="operator">Organ nadzorujący i prowadzący: Pałac Krula Multikont</div>
+    </div>
+  </header>
+
+  <!-- Pasek wyszukiwarki -->
+  <div class="search-box">
+    <input type="text" id="registrySearch" placeholder="Szukaj po pozycji, rodzaju aktu, tytule lub dacie..." oninput="handleSearch()">
+    <button onclick="clearSearch()">Wyczyść</button>
   </div>
-</header>
 
-<main>
-    Monitor Krulewski z 2026 r.
-    <table>
-      <thead>
-        <tr>
-          <th>Pozycja</th>
-          <th>Rodzaj aktu</th>
-          <th>Tytuł</th>
-          <th>Data publikacji</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>29</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz29.pdf" target="_blank">Zarządzenie Krula Multikont nr 28/26 w sprawie powołania Ministra Logistyki i Uzbrojenia Korony</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>28</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz28.pdf" target="_blank">Zarządzenie Krula Multikont nr 27/26 w sprawie powołania Ministra Współpracy Wojskowej i Stabilizacji</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>27</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz27.pdf" target="_blank">Zarządzenie Krula Multikont nr 26/26 w sprawie powołania Ministra Koronnych Wojsk Specjalnych</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>26</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz26.pdf" target="_blank">Zarządzenie Krula Multikont nr 25/26 w sprawie powołania Ministra Sił Powietrznych i Obrony Przestrzeni</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>25</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz25.pdf" target="_blank">Zarządzenie Krula Multikont nr 24/26 w sprawie powołania Ministra Krulewskiej Armady</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>24</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz24.pdf" target="_blank">Zarządzenie Krula Multikont nr 23/26 w sprawie powołania Ministra Wojsk Lądowych</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>23</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz23.pdf" target="_blank">Zarządzenie Krula Multikont nr 22/26 w sprawie powołania Kanclerza Wojskowego Korony</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>22</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz22.pdf" target="_blank">Zarządzenie Krula Multikont nr 21/26 w sprawie odwołania Ministra Spraw Wojskowych</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>21</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz21.pdf" target="_blank">Zarządzenie Krula Multikont nr 20/26 w sprawie powołania Prezesa Koronnego Sądu Najwyższego</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz20.pdf" target="_blank">Zarządzenie Krula Multikont nr 19/26 w sprawie powołania Prezesa Izby Rozpoznawczej Koronnego Trybunału Administracyjnego</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz19.pdf" target="_blank">Zarządzenie Krula Multikont nr 18/26 w sprawie powołania Pierwszego Prezesa Koronnego Trybunału Administracyjnego</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz18.pdf" target="_blank">Zarządzenie Krula Multikont nr 17/26 w sprawie powołania Prezesa Wysokiego Trybunału Koronnego</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz17.pdf" target="_blank">Zarządzenie Krula Multikont nr 16/26 w sprawie powołania sędziów Wysokiego Trybunału Koronnego</a></td>
-          <td>2026-04-15</td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>Uchwała Senatu Koronnego</td>
-          <td><a href="2026/MK2026poz16.pdf" target="_blank">Uchwała Senatu Koronnego nr 1/25 w sprawie wyboru sędziów Wysokiego Trybunału Koronnego</a></td>
-          <td>2026-04-14</td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz15.pdf" target="_blank">Zarządzenie Krula Multikont nr 15/26 w sprawie powołania sędziów Koronnego Trybunału Administracyjnego</a></td>
-          <td>2026-04-01</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz14.pdf" target="_blank">Zarządzenie Krula Multikont nr 14/26 w sprawie powołania sędziów Koronnego Sądu Najwyższego</a></td>
-          <td>2026-03-29</td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz13.pdf" target="_blank">Zarządzenie Krula Multikont nr 13/26 w sprawie powołania Ministra Rolnictwa</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz12.pdf" target="_blank">Zarządzenie Krula Multikont nr 12/26 w sprawie powołania Ministra Zdrowia</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz11.pdf" target="_blank">Zarządzenie Krula Multikont nr 11/26 w sprawie powołania Ministra Spraw Religijnych</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz10.pdf" target="_blank">Zarządzenie Krula Multikont nr 10/26 w sprawie powołania Ministra Sprawiedliwości</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz9.pdf" target="_blank">Zarządzenie Krula Multikont nr 9/26 w sprawie powołania Ministra Spraw Wojskowych</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz8.pdf" target="_blank">Zarządzenie Krula Multikont nr 8/26 w sprawie powołania Ministra Pracy i Rodziny</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz7.pdf" target="_blank">Zarządzenie Krula Multikont nr 7/26 w sprawie powołania Ministra Regionów</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz6.pdf" target="_blank">Zarządzenie Krula Multikont nr 6/26 w sprawie powołania Ministra Edukacji i Nauki</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz5.pdf" target="_blank">Zarządzenie Krula Multikont nr 5/26 w sprawie powołania Ministra Gospodarki</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz4.pdf" target="_blank">Zarządzenie Krula Multikont nr 4/26 w sprawie powołania Ministra Spraw Zagranicznych</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz3.pdf" target="_blank">Zarządzenie Krula Multikont nr 3/26 w sprawie powołania Ministra Finansów</a></td>
-          <td>2026-03-05</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz2.pdf" target="_blank">Zarządzenie Krula Multikont nr 2/26 w sprawie powołania Ministra Spraw Wewnętrznych i Bezpieczeństwa Państwa</a></td>
-          <td>2026-03-05</td>
-        </tr>
-         <tr>
-          <td>1</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2026/MK2026poz1.pdf" target="_blank">Zarządzenie Krula Multikont nr 1/26 w sprawie powołania Wiceprzewodniczącego Rządu Koronnego</a></td>
-          <td>2026-02-24</td>
-        </tr>
+  <!-- Pasek zakładek (Roczniki) -->
+  <nav class="tabs-bar" aria-label="Roczniki publikatora">
+    <button class="tab-button active" onclick="loadTab('2026', this)">Rocznik 2026</button>
+    <button class="tab-button" onclick="loadTab('2025', this)">Rocznik 2025</button>
+  </nav>
 
-        </tbody>
-    </table>
-  </main>
+  <!-- Kontener dynamicznej zawartości -->
+  <section id="contentContainer" class="content-area" aria-live="polite">
+    <!-- Renderowane przez app.js -->
+  </section>
 
-  <main>
-    Monitor Krulewski z 2025 r.
-    <table>
-      <thead>
-        <tr>
-          <th>Pozycja</th>
-          <th>Rodzaj aktu</th>
-          <th>Tytuł</th>
-          <th>Data publikacji</th>
-        </tr>
-      </thead>
-      <tbody>
-         <tr>
-          <td>22</td>
-          <td>Uchwała Izby Arystokratów Senatu Krulestwa Multikont</td>
-          <td><a href="2025/MK2025poz22.pdf" target="_blank">Uchwała Izby Arystokratów Senatu Krulestwa Multikont nr 1/25 z 17.08.2025 r. w sprawie wyboru wicemarszałków Izby Arystokratów</a></td>
-          <td>2025-08-17</td>
-        </tr>
-        <tr>
-          <td>21</td>
-          <td>Uchwała Izby Multikont Senatu Krulestwa Multikont</td>
-          <td><a href="2025/MK2025poz21.pdf" target="_blank">Uchwała Izby Multikont Senatu Krulestwa Multikont nr 2/25 z 17.08.2025 r. w sprawie wyboru wicemarszałków Izby Multikont</a></td>
-          <td>2025-08-17</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>Zarządzenie Marszałka Izby Multikont</td>
-          <td><a href="2025/MK2025poz20.pdf" target="_blank">Zarządzenie Marszałka Izby Multikont nr 1/25 z 17.08.2025 r. w sprawie określenia liczby wicemarszałków Izby Multikont</a></td>
-          <td>2025-08-17</td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td>Uchwała Izby Multikont Senatu Krulestwa Multikont</td>
-          <td><a href="2025/MK2025poz19.pdf" target="_blank">Uchwała Izby Multikont Senatu Krulestwa Multikont nr 1/25 z 17.08.2025 r. w sprawie wyboru Marszałka Izby Multikont</a></td>
-          <td>2025-08-17</td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td>Zarządzenie Krula Multikont</td>
-          <td><a href="2025/MK2025poz18.pdf" target="_blank">Zarządzenie Krula Multikont nr 15/25 z 16.08.2025 r. w sprawie powołania Księcia Tronu na stanowisko Pierwszego Senatora</a></td>
-          <td>2025-08-16</td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td>Zarządzenie Wielkiego Diuka</td>
-          <td><a href="2025/MK2025poz17.pdf" target="_blank">Zarządzenie Wielkiego Diuka nr 3/25 z 10.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Komendanta Głównego Straży Pożarnej</a></td>
-          <td>2025-06-10</td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>Zarządzenie Wielkiego Diuka</td>
-          <td><a href="2025/MK2025poz16.pdf" target="_blank">Zarządzenie Wielkiego Diuka nr 2/25 z 10.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Komendanta Straży Prawa</a></td>
-          <td>2025-06-10</td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>Zarządzenie Wielkiego Diuka</td>
-          <td><a href="2025/MK2025poz15.pdf" target="_blank">Zarządzenie Wielkiego Diuka nr 1/25 z 10.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Komendanta Głównego Korpusu Sił Porządku Państwa</a></td>
-          <td>2025-06-10</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz14.pdf" target="_blank">Zarządzenie Krula nr 14/25 z 10.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Rzecznika Praw Multikont i Botów</a></td>
-          <td>2025-06-10</td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz13.pdf" target="_blank">Zarządzenie Krula nr 13/25 z 10.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Wielkiego Skarbnika</a></td>
-          <td>2025-06-10</td>
-        </tr>
-         <tr>
-          <td>12</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz12.pdf" target="_blank">Zarządzenie Krula nr 12/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Głównego Inspektora Cebulacji</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz11.pdf" target="_blank">Zarządzenie Krula nr 11/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Głównego Inspektora Religii i Związków Wyznaniowych</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz10.pdf" target="_blank">Zarządzenie Krula nr 10/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Szefa Krulewskiej Organizacji Wywiadu</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz9.pdf" target="_blank">Zarządzenie Krula nr 9/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Szefa Biura Bezpieczeństwa Krulestwa</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz8.pdf" target="_blank">Zarządzenie Krula nr 8/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Sekretarza Rady Lordów</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz7.pdf" target="_blank">Zarządzenie Krula nr 7/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda Ministra Zdrowia i Badań</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz6.pdf" target="_blank">Zarządzenie Krula nr 6/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda Ministra Edukacji i Rodziny</a></td>
-          <td>2025-06-09</td>
-        </tr>
-         <tr>
-          <td>5</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz5.pdf" target="_blank">Zarządzenie Krula nr 5/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda Kwestora</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz4.pdf" target="_blank">Zarządzenie Krula nr 4/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda Kanclerza</a></td>
-          <td>2025-06-09</td>
-        </tr>
-         <tr>
-          <td>3</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz3.pdf" target="_blank">Zarządzenie Krula nr 3/25 z 09.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda-Dowódcy Korpusu Dyplomatycznego</a></td>
-          <td>2025-06-09</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz2.pdf" target="_blank">Zarządzenie Krula nr 2/25 z 08.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Lorda Marszałka Krulestwa Multikont</a></td>
-          <td>2025-06-08</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Zarządzenie Krula</td>
-          <td><a href="2025/MK2025poz1.pdf" target="_blank">Zarządzenie Krula nr 1/25 z 08.06.2025 r. w sprawie potwierdzenia powołania na stanowisko Wielkiego Diuka Krulestwa Multikont</a></td>
-          <td>2025-06-08</td>
-        </tr>
-    
-      </tbody>
-    </table>
-  </main>
+</main>
 
-  <footer>
-    <p>&copy; Pałac Krula 2026</p>
-  </footer>
+<!-- Urzędowa stopka rządowa -->
+<footer class="footer-fixed">
+  Monitor Krulewski © 2026 – Pałac Krula Multikont | Wszelkie prawa zastrzeżone
+</footer>
+
+<!-- Dane i logika aplikacji -->
+<script src="app.js"></script>
+
 </body>
 </html>
