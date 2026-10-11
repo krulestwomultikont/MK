@@ -3,6 +3,13 @@
 // ==========================================================================
 const monitorDb = {
   "2026": [
+    { pos: 36, type: "Zarządzenie Ministra Spraw Zagranicznych", title: "Zarządzenie Ministra Spraw Zagranicznych nr 1/26 w sprawie powołania Szefa Koronnego Korpusu Dyplomatycznego", date: "2026-10-11", url: "2026/MK2026poz36.pdf" },
+    { pos: 35, type: "Zarządzenie Przewodniczącego Rządu Koronnego", title: "Zarządzenie Przewodniczącego Rządu Koronnego nr 1/26 w sprawie powołania Szefa Koronnej Administracji Skarbowej", date: "2026-10-11", url: "2026/MK2026poz35.pdf" },
+    { pos: 34, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 29/26 w sprawie powołania Szefa Pałacu Krula", date: "2026-10-11", url: "2026/MK2026poz34.pdf" },
+    { pos: 33, type: "Uchwała Senatu Koronnego", title: "Uchwała Senatu Koronnego nr 4/26 w sprawie wyboru członków Krulewskiej Rady Finansów", date: "2026-10-11", url: "2026/MK2026poz33.pdf" },
+    { pos: 32, type: "Uchwała Senatu Koronnego", title: "Uchwała Senatu Koronnego nr 3/26 w sprawie wyboru Prezesa i członków Rady Obiektywizacji Informacji", date: "2026-10-11", url: "2026/MK2026poz32.pdf" },
+    { pos: 31, type: "Uchwała Senatu Koronnego", title: "Uchwała Senatu Koronnego nr 2/26 w sprawie powołania Rzecznika Praw Obywatelskich", date: "2026-10-11", url: "2026/MK2026poz31.pdf" },
+    { pos: 30, type: "Uchwała Senatu Koronnego", title: "Uchwała Senatu Koronnego nr 1/26 w sprawie powołania Prezesa Koronnej Izby Kontroli", date: "2026-10-11", url: "2026/MK2026poz30.pdf" },
     { pos: 29, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 28/26 w sprawie powołania Ministra Logistyki i Uzbrojenia Korony", date: "2026-04-15", url: "2026/MK2026poz29.pdf" },
     { pos: 28, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 27/26 w sprawie powołania Ministra Współpracy Wojskowej i Stabilizacji", date: "2026-04-15", url: "2026/MK2026poz28.pdf" },
     { pos: 27, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 26/26 w sprawie powołania Ministra Koronnych Wojsk Specjalnych", date: "2026-04-15", url: "2026/MK2026poz27.pdf" },
