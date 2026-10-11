@@ -3,6 +3,16 @@
 // ==========================================================================
 const monitorDb = {
   "2026": [
+    { pos: 46, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 35/26 w sprawie powołania Arcyinkwizytora do spraw wojskowych", date: "2026-10-11", url: "2026/MK2026poz46.pdf" },
+    { pos: 45, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 34/26 w sprawie powołania Wysokiego Inkwizytora", date: "2026-10-11", url: "2026/MK2026poz45.pdf" },
+    { pos: 44, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 33/26 w sprawie powołania wiceprezesa Wysokiego Trybunału Koronnego", date: "2026-10-11", url: "2026/MK2026poz44.pdf" },
+    { pos: 43, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 32/26 w sprawie powołania wiceprezesów Koronnego Sądu Najwyższego", date: "2026-10-11", url: "2026/MK2026poz43.pdf" },
+    { pos: 42, type: "Zarządzenie Ministra Spraw Wewnętrznych i Bezpieczeństwa Państwa", title: "Zarządzenie Ministra Spraw Wewnętrznych i Bezpieczeństwa Państwa nr 1/26 w sprawie powołania zastępców Komendanta Głównego Koronnej Służby Ratowniczo-Gaśniczej", date: "2026-10-11", url: "2026/MK2026poz42.pdf" },
+    { pos: 41, type: "Zarządzenie Przewodniczącego Rządu Koronnego", title: "Zarządzenie Przewodniczącego Rządu Koronnego nr 4/26 w sprawie powołania Komendanta Głównego Koronnej Służby Ratowniczo-Gaśniczej", date: "2026-10-11", url: "2026/MK2026poz41.pdf" },
+    { pos: 40, type: "Zarządzenie Przewodniczącego Rządu Koronnego", title: "Zarządzenie Przewodniczącego Rządu Koronnego nr 3/26 w sprawie powołania Komendanta Głównego Koronnego Korpusu Ochrony Porządku", date: "2026-10-11", url: "2026/MK2026poz40.pdf" },
+    { pos: 39, type: "Zarządzenie Przewodniczącego Rządu Koronnego", title: "Zarządzenie Przewodniczącego Rządu Koronnego nr 2/26 w sprawie powołania szefów służb właściwych Wielkiej Armii Koronnej", date: "2026-10-11", url: "2026/MK2026poz39.pdf" },
+    { pos: 38, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 31/26 w sprawie powołania zastępców Głównego Inspektora Gwardii Krula", date: "2026-10-11", url: "2026/MK2026poz38.pdf" },
+    { pos: 37, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 30/26 w sprawie powołania Głównego Inspektora Gwardii Krula", date: "2026-10-11", url: "2026/MK2026poz37.pdf" },
     { pos: 36, type: "Zarządzenie Ministra Spraw Zagranicznych", title: "Zarządzenie Ministra Spraw Zagranicznych nr 1/26 w sprawie powołania Szefa Koronnego Korpusu Dyplomatycznego", date: "2026-10-11", url: "2026/MK2026poz36.pdf" },
     { pos: 35, type: "Zarządzenie Przewodniczącego Rządu Koronnego", title: "Zarządzenie Przewodniczącego Rządu Koronnego nr 1/26 w sprawie powołania Szefa Koronnej Administracji Skarbowej", date: "2026-10-11", url: "2026/MK2026poz35.pdf" },
     { pos: 34, type: "Zarządzenie Krula Multikont", title: "Zarządzenie Krula Multikont nr 29/26 w sprawie powołania Szefa Pałacu Krula", date: "2026-10-11", url: "2026/MK2026poz34.pdf" },
